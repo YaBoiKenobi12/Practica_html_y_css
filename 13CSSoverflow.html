@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Overflow</title>
+  <style>
+    /* Estilo común para todos los elementos */
+    .container {
+      width: 300px;
+      height: 200px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      width: 200px;
+      height: 150px;
+      border: 1px solid #000;
+      margin: 10px;
+    }
+
+    /* Desbordamiento visible */
+    .visible {
+      overflow: visible;
+    }
+
+    /* Desbordamiento oculto */
+    .hidden {
+      overflow: hidden;
+    }
+
+    /* Desbordamiento con scroll */
+    .scroll {
+      overflow: scroll;
+    }
+
+    /* Desbordamiento automático */
+    .auto {
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container visible">
+  <h2>Overflow Visible</h2>
+  <div class="content">
+    <p>Contenido que puede salirse del contenedor.</p>
+  </div>
+</div>
+
+<div class="container hidden">
+  <h2>Overflow Hidden</h2>
+  <div class="content">
+    <p>Contenido que puede ser recortado si se desborda.</p>
+  </div>
+</div>
+
+<div class="container scroll">
+  <h2>Overflow Scroll</h2>
+  <div class="content">
+    <p>Contenido que puede ser desplazado si se desborda.</p>
+  </div>
+</div>
+
+<div class="container auto">
+  <h2>Overflow Auto</h2>
+  <div class="content">
+    <p>Contenido que puede ser desplazado automáticamente si se desborda.</p>
+  </div>
+</div>
+
+</body>
+</html>

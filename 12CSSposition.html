@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning</title>
+  <style>
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #f0f0f0;
+      border: 1px solid #000;
+      margin-bottom: 20px;
+    }
+
+
+    .static {
+      position: static;
+    }
+
+    .relative {
+      position: relative;
+      left: 20px;
+      top: 10px;
+    }
+
+    .fixed {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+
+    .absolute {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+
+    /* Posición pegajosa (sticky) */
+    .sticky {
+      position: sticky;
+      top: 0;
+    }
+
+    /* Contenedor para elementos pegajosos */
+    .sticky-container {
+      height: 200px;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box static">Static</div>
+<div class="box relative">Relative</div>
+<div class="box fixed">Fixed</div>
+<div class="box absolute">Absolute</div>
+
+<div class="sticky-container">
+  <div class="box sticky">Sticky</div>
+  <p>Scroll down to see the sticky behavior.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet velit sed libero tempus ultrices eget id leo. Curabitur vestibulum auctor malesuada. Integer malesuada auctor est, sed finibus ex convallis at. Proin pulvinar, ligula sit amet dictum rutrum, lorem eros interdum tortor, ac consectetur magna lacus in est.</p>
+  <p>Donec auctor hendrerit urna, vel sollicitudin neque condimentum sed. Praesent scelerisque malesuada ligula, et molestie lorem mattis non. Integer eget semper sapien. Ut ac leo nisl. Mauris at arcu eu lorem congue efficitur. Ut tempor eget risus a fringilla.</p>
+  <p>Phasellus mattis tortor non eros facilisis, eu convallis lacus luctus. Suspendisse eu tincidunt justo. Integer sollicitudin risus magna, ut iaculis dui facilisis vel. Vestibulum sodales semper nunc, eget cursus ante molestie id. Nam tincidunt risus nec tellus condimentum convallis.</p>
+  <p>Praesent lacinia eu est in sollicitudin. Integer pellentesque nisl ac lectus commodo, ut rhoncus quam sollicitudin. Fusce eget purus efficitur, viverra velit nec, eleifend nisl. Nulla tincidunt eros eu neque efficitur, non pharetra mi rhoncus. Aliquam ac dapibus mauris. Aenean malesuada metus at mauris sollicitudin scelerisque.</p>
+</div>
+
+</body>
+</html>
